@@ -1,0 +1,30 @@
+typedef struct no tNo;
+typedef struct lista tLista;
+
+// Cria uma lista vazia, com as opções de classificação e repetição
+tLista* cria_lista_vazia(int classif, int repet);
+
+// Verifica se a lista está vazia
+int lista_vazia(const tLista *pl);
+
+// Verifica se a lista permite repetição
+int lista_repet(const tLista *pl);
+
+// Verifica se a lista é classificada
+int lista_classif(const tLista *pl);
+
+// Percorre e exibe os elementos da lista
+void lista_percorre(const tLista *pl);
+
+// Inclui um valor na lista, respeitando regras de repetição e classificação
+int lista_inclui(tLista *pl, int valor);
+
+// Remove um valor da lista
+int lista_remove(tLista *pl, int valor);
+
+// Libera a memória alocada para a lista
+void libera_lista(tLista *pl);
+
+// Função auxiliar para exibir valores
+void exibe(int valor);
+
