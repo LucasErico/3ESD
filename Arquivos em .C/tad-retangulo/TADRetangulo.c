@@ -58,7 +58,7 @@ void ret_exibe(tRetangulo* ret)
     
 }
 
-void ret_getRetangulo(tRetangulo* ret)
+char* ret_getRetangulo(tRetangulo* ret)
 {
     char* rt;
   int tam = sizeof(*ret)+19;
